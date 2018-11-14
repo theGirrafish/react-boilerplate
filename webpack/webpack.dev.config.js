@@ -1,4 +1,3 @@
-const _ = require('lodash');
 const path = require('path');
 const webpack = require('webpack');
 
@@ -49,10 +48,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.DefinePlugin({
-      serverHost: JSON.stringify('localhost'),
-      serverPort: JSON.stringify('8000')
-    }),
     new webpack.ProvidePlugin({
       _: 'lodash',
     })

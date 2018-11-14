@@ -1,8 +1,6 @@
-const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
 const CompressionPlugin = require('compression-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const parentDir = path.join(__dirname, '../');
 
@@ -48,6 +46,8 @@ module.exports = {
     ]
   },
   optimization: {
+    minimize: true,
+    runtimeChunk: false,
     splitChunks: {
       cacheGroups: {
         commons: {
@@ -62,6 +62,7 @@ module.exports = {
     new webpack.ProvidePlugin({
       _: 'lodash',
     }),
+    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new CompressionPlugin({
@@ -69,13 +70,16 @@ module.exports = {
       algorithm: 'gzip',
       test: /\.js$|\.jsx$|\.css$|\.html$/,
       threshold: 10240,
-      minRatio: 0
-    })
+      minRatio: 0.8
+    }),
   ],
+  performance: {
+    maxAssetSize: 512000,
+    maxEntrypointSize: 512000
+  },
   resolve: {
     extensions: ['.js', '.jsx', '.css']
   },
-  devtool: false,
   devServer: {
     port: 5000,
     host: 'localhost',
