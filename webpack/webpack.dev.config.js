@@ -1,11 +1,11 @@
 const _ = require('lodash');
-const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
 
 const parentDir = path.join(__dirname, '../');
 
 module.exports = {
+  mode: 'development',
   entry: [
     'babel-polyfill',
     path.join(parentDir, 'src/index.jsx')
@@ -15,7 +15,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
@@ -55,10 +55,6 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       _: 'lodash',
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: false,
-      mangle: false
     })
   ],
   resolve: {

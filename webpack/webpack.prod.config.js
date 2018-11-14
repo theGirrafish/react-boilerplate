@@ -7,16 +7,17 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const parentDir = path.join(__dirname, '../');
 
 module.exports = {
+  mode: 'production',
   entry: [
     'babel-polyfill',
     path.join(parentDir, 'src/index.jsx')
   ],
   output: {
     path: path.join(parentDir, 'dist'),
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
@@ -46,36 +47,27 @@ module.exports = {
       }
     ]
   },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all'
+        }
+      }
+    }
+  },
   plugins: [
-    new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production'),
-    }),
     new webpack.ProvidePlugin({
       _: 'lodash',
     }),
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
-      mangle: true,
-      compress: {
-        warnings: false,
-        pure_getters: true,
-        unsafe: true,
-        unsafe_comps: true,
-        screw_ie8: true
-      },
-      output: {
-        comments: false
-      },
-      exclude: [/\.min\.js$/gi]
-    }),
-    new webpack.IgnorePlugin(/^\.\/locale$/, [/moment$/]),
-    new ExtractTextPlugin('bundle.css', {allChunks: false}),
     new CompressionPlugin({
       asset: '[path].gz[query]',
       algorithm: 'gzip',
-      test: /\.js$|\.css$|\.html$/,
+      test: /\.js$|\.jsx$|\.css$|\.html$/,
       threshold: 10240,
       minRatio: 0
     })
@@ -83,12 +75,12 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.css']
   },
-  devtool: 'source-map',
+  devtool: false,
   devServer: {
     port: 5000,
     host: 'localhost',
-    public: 'localhost',
-    contentBase: parentDir,
+    compress: true,
+    contentBase: path.join(parentDir, 'dist'),
     historyApiFallback: true
   }
 };
