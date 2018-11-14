@@ -1,0 +1,70 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for a React application",
+  "main": "index.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js",
+    "prod": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.prod.config.js",
+    "build": "./node_modules/.bin/webpack --config ./webpack/webpack.prod.config.js",
+    "lint": "./node_modules/.bin/eslint ./src/**/*.js*; exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<yourusername>/<yourrepo>.git"
+  },
+  "author": "<Your Name>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/<yourusername>/<yourrepo>/issues"
+  },
+  "homepage": "https://github.com/<yourusername>/<yourrepo>#readme",
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-0"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "dependencies": {
+    "@types/react": "^16.3.8",
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10",
+    "react": "^16.4.1",
+    "react-day-picker": "^7.1.6",
+    "react-dom": "^16.4.1",
+    "webpack": "^3.5.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.5",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "compression-webpack-plugin": "^1.1.11",
+    "css-loader": "^0.28.10",
+    "eslint": "^5.1.0",
+    "eslint-plugin-react": "^7.7.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.6",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.1.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.18.2",
+    "url-loader": "^1.0.1",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
