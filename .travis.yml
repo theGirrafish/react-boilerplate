@@ -10,10 +10,10 @@ script:
   - npm run lint
   - npm run test
   - npm run build
-deploy:
-  provider: heroku
-  app: the-react-boilerplate
-  api_key:
-    secure: hkVua/vebxnC2WXn4Vs7RVf+7qbqY8dVCJTWi/JFInI4PhfrnRXnqLxT9b/OFyeMQLcVfIY53jt7rlkcZVTyMbbQ8XOf5EW08ypv3CqnT98HS/n4PEaBlr67TxipmT55JKy9Tt+yVSdUCD+eEcItFva907mnuTlsnjCc3NnrHNivVGciWSuO3cpRM+Emlc99NFwj6B8x881Cww8RRD4blOzXoNp7GpimafB96MoFRs0nAFtcArxXimX1P6Mmghe5pciB7lAMD9nNaesCkJJxP5h4A4xl5KANiEiU4GGVEEb4RJY1971NZwJ7GEVr37O2+QN7e5W+7O+TkypnkQnZ9fmuLk3kBP5Y3Nn0DKw5Uls7SZk0t3NTAJPavvRe0ndq9zJUH9kX8j7EipMswQzc0edYl62/ukmJxkS8RjVljKcYxR6/rW2tQ0tKBA6g8xbvwLmcxKh1etJ/D98c50nZKnrB9EbCihw0MJHIojyi+Al2qQSXFB7DcdtABFb5mcNlOWDIPY5K+Kh85CbPhETcn1hZ8bvtb5UTem8/zKGvu4T2xH521xADMvO3TYo+R2HDi087nbUi95eQdlzG1T0+FXKT8kOibPzjzOJ9CbN3MjRdB/BBwjhTLxAac29rRmYbbLaPJD2Qe94lSwbPSQ6QyxdHU2cgYDvXpwACb3a0Zfk=
-  on:
-    repo: theGirrafish/react-boilerplate
+# deploy:
+#   provider: heroku
+#   app: the-react-boilerplate
+#   api_key:
+#     secure: hkVua/vebxnC2WXn4Vs7RVf+7qbqY8dVCJTWi/JFInI4PhfrnRXnqLxT9b/OFyeMQLcVfIY53jt7rlkcZVTyMbbQ8XOf5EW08ypv3CqnT98HS/n4PEaBlr67TxipmT55JKy9Tt+yVSdUCD+eEcItFva907mnuTlsnjCc3NnrHNivVGciWSuO3cpRM+Emlc99NFwj6B8x881Cww8RRD4blOzXoNp7GpimafB96MoFRs0nAFtcArxXimX1P6Mmghe5pciB7lAMD9nNaesCkJJxP5h4A4xl5KANiEiU4GGVEEb4RJY1971NZwJ7GEVr37O2+QN7e5W+7O+TkypnkQnZ9fmuLk3kBP5Y3Nn0DKw5Uls7SZk0t3NTAJPavvRe0ndq9zJUH9kX8j7EipMswQzc0edYl62/ukmJxkS8RjVljKcYxR6/rW2tQ0tKBA6g8xbvwLmcxKh1etJ/D98c50nZKnrB9EbCihw0MJHIojyi+Al2qQSXFB7DcdtABFb5mcNlOWDIPY5K+Kh85CbPhETcn1hZ8bvtb5UTem8/zKGvu4T2xH521xADMvO3TYo+R2HDi087nbUi95eQdlzG1T0+FXKT8kOibPzjzOJ9CbN3MjRdB/BBwjhTLxAac29rRmYbbLaPJD2Qe94lSwbPSQ6QyxdHU2cgYDvXpwACb3a0Zfk=
+#   on:
+#     repo: theGirrafish/react-boilerplate
