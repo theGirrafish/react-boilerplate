@@ -10,10 +10,10 @@ script:
   - npm run lint
   - npm run test
   - npm run build
-# deploy:
-#   provider: heroku
-#   app: the-react-boilerplate
-#   api_key:
-#     secure: d2a599ff-c5dc-4677-913f-eab85f23b6a7
-#   on:
-#     repo: theGirrafish/react-boilerplate
+deploy:
+  provider: heroku
+  app: the-react-boilerplate
+  api_key:
+    secure: nZL7Spnk+p1sMRiMnGv5TI0fa5Gx3Q4lxsDzgmn1QlynGuDAVFeyybuwpROFpgZE/7U/O5JwbAB4vRJU4+kimTcuxuJKpCWYRJLOCSGk9YadM3XOHsCluWKxJz1Pfa5/SgrvupKiYf0mioPEBMQrRqSVfkTBIce5T+Vxy3Kx7SSDLKucB0yWpaINVq6VEUucVRfRwK14shONtpycKgvCSFhYKGG3Jr4TSomTxhYppxv0YGx9v7PBPmuuICXlMMu408z2331/IfhgOtoSdnsjgHmm1mNeexfI88Nml9UZ85j6dyAOAXMbKtjB8p2zxn+oDcEMkjpKP81SmjWstkhxps6pp/BZcyVESiGW3KHXmZ0ksDygqtxRDcqYr0ACRLmW7FlDrlapL1IIjJPiJLVppWl9Qi1Pz+i+t5hVGO1cVmBLY6+DOyeH3vP+Js8aazkZ9QFKP5gqAO7oi6yCMcxS5MFVPGL+9H0aTUWT4p6J9OIJWlIgJOH4iFfM6r8IjHC/z1HLHINe5u1PvMkeoCvQTYZyVXvJYNOnnyhFrh5EI3LPlSGjcWGsNN7cwllC9NlmRRzTh3ykOEvCVEBO2VgjvoAHYhVGfrgC3XXIS0N4RoePxsBjSXFGBv6jq2Q0BBqeTGWfOE2Oy1y2Yj6ewj+LFo226/bAWFFnIOACPBPmKi4=
+  on:
+    repo: theGirrafish/react-boilerplate
