@@ -81,8 +81,6 @@ module.exports = {
     extensions: ['.js', '.jsx', '.css']
   },
   devServer: {
-    port: 5000,
-    host: 'localhost',
     compress: true,
     contentBase: path.join(parentDir, 'dist'),
     historyApiFallback: true
