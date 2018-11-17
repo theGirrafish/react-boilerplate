@@ -14,6 +14,6 @@ deploy:
   provider: heroku
   app: the-react-boilerplate
   api_key:
-    secure: $HEROKU_API_KEY
+    secure: UJjbhP+KCAeJ2lX/gum1NyY/gHSck3PFT6rcTMMSzQ8rNIzYuVmDPWL2OKs8UN6ra0WC04M8LFxvw3msHOAaAy2rz+AeWp/VziTzthRqN45J1kIIiCehcK/R6hISs9yAdorAufcQ/1rVS71PJZVrazLMwT9ukq2jgMYHRKbYsmTqpTF5o7dhwVeX6mVlIEDhtGk6+S99O85087yKyj1qWdU/mQhEsSI0vL4wf+bYtCCJOh5JQ9DOZ61+nWdyTPuTZkguc9n8cl8DYztS/vuYVAyn0xLvwYz4FyPFUrFCyEo7nsykLBSIoRMeKYr8XURWUp3wEskwJi8gmprxk8fQ31batSjEOTKYOA/nvBGoUCI4xnOsvTU9AiGY/rZW9TyEzAB4iY+Y3E0fHL0wfeFLZnLazqXfqDyqIAsqw3EzMk3QYl7Lj5Su2iaZ0/wwoAgr50rsNdDqOST817lxvfVceX9LN1i6YbqiCvfEpDvuzn1XoUa7R+iXkw+5DIKhtShzOoTmz7fiHGN0yfi6zSesYUE1EOtMLpcS/4yI436hMREvSyBUCeFEALkPweQGvMTC1br+jkUWynqMer0kDS0WLrwM7qK6Ex2wH8P5R4GmHecW30ziCBFWyRjztQ2leaBWboy/7wvHotjlQAtChrjQJcBumodLEKhmdujw0tmSDPs=
   on:
     repo: theGirrafish/react-boilerplate
