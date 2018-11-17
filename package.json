@@ -16,15 +16,15 @@
     "start": "npm run build && node server.jsx"
   },
   "author": "<Your Name>",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/<yourusername>/<yourrepo>.git"
+    "url": "git+https://github.com/<yourgithubusername>/<yourrepo>.git"
   },
   "bugs": {
-    "url": "https://github.com/<yourusername>/<yourrepo>/issues"
+    "url": "https://github.com/<yourgithubusername>/<yourrepo>/issues"
   },
-  "homepage": "https://github.com/<yourusername>/<yourrepo>#readme",
+  "homepage": "https://github.com/<yourgithubusername>/<yourrepo>#readme",
   "babel": {
     "presets": [
       "es2015",
