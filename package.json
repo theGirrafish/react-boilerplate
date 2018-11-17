@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "A boilerplate for a React application",
   "main": "index.jsx",
-  "engines": {
-    "npm": "6.4.1",
-    "node": "11.1.0"
-  },
+  // "engines": {
+  //   "npm": "6.4.1",
+  //   "node": "11.1.0"
+  // },
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js",
