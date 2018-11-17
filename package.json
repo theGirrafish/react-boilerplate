@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A boilerplate for a React application",
   "main": "index.jsx",
+  "engines": {
+    "npm": "6.4.1",
+    "node": "11.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\"",
     "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js",
@@ -11,12 +15,12 @@
     "lint": "./node_modules/.bin/eslint ./src/**/*.js*",
     "start": "npm run prod"
   },
+  "author": "<Your Name>",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/<yourusername>/<yourrepo>.git"
   },
-  "author": "<Your Name>",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/<yourusername>/<yourrepo>/issues"
   },
