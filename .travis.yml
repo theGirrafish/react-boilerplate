@@ -10,10 +10,10 @@ script:
   - npm run lint
   - npm run test
   - npm run build
-deploy:
-  provider: heroku
-  app: the-react-boilerplate
-  api_key:
-    secure: d2a599ff-c5dc-4677-913f-eab85f23b6a7
-  on:
-    repo: theGirrafish/react-boilerplate
+# deploy:
+#   provider: heroku
+#   app: the-react-boilerplate
+#   api_key:
+#     secure: d2a599ff-c5dc-4677-913f-eab85f23b6a7
+#   on:
+#     repo: theGirrafish/react-boilerplate
