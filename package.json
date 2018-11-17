@@ -8,7 +8,7 @@
     "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js",
     "prod": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.prod.config.js",
     "build": "./node_modules/.bin/webpack --config ./webpack/webpack.prod.config.js",
-    "lint": "./node_modules/.bin/eslint ./src/**/*.js*; exit 0"
+    "lint": "./node_modules/.bin/eslint ./src/**/*.js*"
   },
   "repository": {
     "type": "git",

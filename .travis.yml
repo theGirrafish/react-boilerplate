@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - 11
+cache:
+  directories:
+    - node_modules
+install:
+  - npm install
+script:
+  - npm run lint
+  - npm run test
+  - npm run dev
+deploy:
+  provider: heroku
+  app: the-react-boilerplate
+  api_key:
+    secure: $HEROKU_API_KEY
+  on:
+    repo: thegirrafish/react-boilerplate
