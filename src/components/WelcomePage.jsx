@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import Logo from '../images/favicon.ico';
+import Logo from '../assets/images/favicon.ico';
 
 class WelcomePage extends PureComponent {
   constructor(props) {

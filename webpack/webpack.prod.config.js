@@ -34,6 +34,9 @@ module.exports = {
         test: /\.s[a|c]ss$/,
         loaders: ['sass-loader', 'style-loader', 'css-loader']
       }, {
+        test: /\.(html)$/,
+        loader: 'html-loader'
+      }, {
         test: /\.(png|jpg|gif|svg|ico|eot|ttf|woff|woff2)$/,
         include: /images/,
         use: {
@@ -46,14 +49,12 @@ module.exports = {
     ]
   },
   optimization: {
-    minimize: true,
-    runtimeChunk: false,
     splitChunks: {
       cacheGroups: {
-        commons: {
+        vendors: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
-          chunks: 'all'
+          chunks: 'all',
         }
       }
     }
@@ -62,7 +63,6 @@ module.exports = {
     new webpack.ProvidePlugin({
       _: 'lodash',
     }),
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
     new CompressionPlugin({
@@ -81,9 +81,9 @@ module.exports = {
     extensions: ['.js', '.jsx', '.css']
   },
   devServer: {
-    port: process.env.PORT,
+    port: process.env.PORT || 5000,
     compress: true,
-    contentBase: path.join(parentDir, 'dist'),
+    contentBase: parentDir,
     historyApiFallback: true
   }
 };
