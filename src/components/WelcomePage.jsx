@@ -12,7 +12,7 @@ class WelcomePage extends PureComponent {
     return (
       <div>
         <h1>Hello! Welcome to my simple React Boilerplate!</h1>
-        <img src={Logo} alt="code"/>
+        <img src={Logo} alt='code'/>
       </div>
     );
   }
