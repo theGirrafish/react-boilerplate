@@ -12,8 +12,8 @@ script:
   - npm run build
 deploy:
   provider: heroku
-  app: the-react-boilerplate
   api_key:
     secure: rXtZMhKOMYHRrYk9DFn5OTIfPqENBw3aFB/m2b5PVcbtK3tg+tS0PtFJvA1SHWV72qdXmz4Ud7JFXU/o8vCR4oyPw4awzBvy8dAdsQ11FMYzyRW6IpcKwFlB4MYam2em27ZfGfZ5lO/Ug1nMYrqgn3l/kR1T9Hk9DWc1EKg/pALY/py9IMxRJAJU1eN/CfIl6tcLX9IZ8q7QQVPwEgpby/hkY7SNOQ12cNyx2fQWro0MlZK0cYREe4g9yD8Z3ziVzglvcNadpnqP49ts+yN+2nj8ZRKX9vrIllQocH954zDp/UwUx8OA1CfB4Tz40Hsck3akn2aA/wvXweuVWEuKKUTvjoNyLPrjtb7gpgtbg4He5eDL0wvyr66FWwXtLGXCyuJBfQ3Rg6o6BcfbZfUBdp3SZkDIf8xC5Y6uQLiV6ziaEiX+/FCtYpLDI++ubCSU4XLHbLz+NAWQVKk3qvn3ulP7M7nnmlGG7ueNalBJ8MRmDDy/rp5On9SVIKgsxmP6oteNFf2vAjPRek8mJ+RhcYWKwh83lpEasmAPYNCVK9SDN4puA73LK0AH7RiQ03fdIqGPLQWErv6+rOP73cuXR9JOFS++ZrOE5MkKPtZaUIKwkbnchqlCDnam7N1BmOGhz8YlEoJTDJ2yVa+Q2o/K5uIbzsB4ilIGv9WiKgheetA=
+  app: the-react-boilerplate
   on:
     repo: theGirrafish/react-boilerplate
