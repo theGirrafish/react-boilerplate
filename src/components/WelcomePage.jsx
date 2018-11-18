@@ -1,6 +1,5 @@
 import React, {PureComponent} from 'react';
-import Logo from '../assets/images/react.jpg';
-import Background from '../assets/images/background.jpg';
+import Logo from '../assets/images/react.png';
 
 class WelcomePage extends PureComponent {
   constructor(props) {
@@ -10,13 +9,6 @@ class WelcomePage extends PureComponent {
   }
 
   render() {
-    const textCSS = {
-      color: '#fff',
-      padding: '18px',
-      fontSize: '25px',
-      letterSpacing: '10px'
-    }
-
     return (
       <div className='background'>
         <img className='react_logo' src={Logo}/>

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WelcomePage snapshot test 1`] = `
+<div
+  className="background"
+>
+  <img
+    className="react_logo"
+    src={[Function]}
+  />
+  <div
+    className="text"
+  >
+    <span
+      className="title"
+    >
+      The React Boilerplate
+    </span>
+    <span
+      className="subtitle"
+    >
+      Congratulations!
+    </span>
+    <span
+      className="subtitle"
+    >
+      Looks like everything is up and running.
+    </span>
+  </div>
+</div>
+`;

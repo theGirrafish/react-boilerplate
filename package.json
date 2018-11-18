@@ -8,12 +8,13 @@
     "node": "11.1.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\"",
+    "start": "npm run build && node server.jsx",
     "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js",
     "prod": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.prod.config.js",
     "build": "./node_modules/.bin/webpack --config ./webpack/webpack.prod.config.js",
     "lint": "./node_modules/.bin/eslint ./src/**/*.js*",
-    "start": "npm run build && node server.jsx"
+    "test": "./node_modules/.bin/jest",
+    "test:watch": "./node_modules/.bin/jest --watchAll"
   },
   "author": "<Your Name>",
   "license": "MIT",
@@ -34,6 +35,11 @@
     "plugins": [
       "transform-object-rest-spread"
     ]
+  },
+  "jest": {
+    "moduleNameMapper": {
+      ".+\\.(png|jpg|jpeg|gif|svg|ico|eot|ttf|woff|woff2)$": "url-loader"
+    }
   },
   "dependencies": {
     "@types/react": "^16.3.8",
@@ -61,8 +67,11 @@
     "file-loader": "^2.0.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
     "less": "^3.8.1",
     "less-loader": "^4.0.6",
+    "node-sass": "^4.10.0",
+    "react-test-renderer": "^16.6.3",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.18.2",
     "url-loader": "^1.0.1",
