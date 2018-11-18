@@ -52,9 +52,11 @@ Usage
 
 - All JavaScript and React code should be written under the `src/components/` folder while the static assets should be stored under `src/assets/`.
 - Available commands:
-  - `npm run test`: Run the test againsts the `src/` folder.
-  - `npm run lint`: Run linting on all `.js` and `.jsx` files under the `src/` folder.
+
   - `npm run dev`: Run a development version of the code on `http://localhost:5000` using `webpack-dev-server`. Includes live reloading and source map.
   - `npm run prod`: Run a production ready version of the code on `http://localhost:5000` using `webpack-dev-server`. Includes live reloading.
   - `npm run build`: Build and minify all files in `src/` folder for production use and store in `dist/` folder.
-  - `npm start`: Build and minify all files into `dist/` folder and serve using `express.js`. Defaults to `http://localhost:5000` if no port is specified.
+  - `npm run start`: Build and minify all files into `dist/` folder and serve using `express.js`. Defaults to `http://localhost:5000` if no port is specified.
+  - `npm run lint`: Run linting on all `.js` and `.jsx` files under the `src/` folder.
+  - `npm run test`: Run Jest tests againsts the `test/` folder.
+  - `npm run test:watch`: Run Jest tests againsts the `test/` folder and watches for code changes.

@@ -8,10 +8,10 @@
     "node": "11.1.0"
   },
   "scripts": {
-    "start": "npm run build && node server.jsx",
     "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.dev.config.js",
     "prod": "./node_modules/.bin/webpack-dev-server --config ./webpack/webpack.prod.config.js",
     "build": "./node_modules/.bin/webpack --config ./webpack/webpack.prod.config.js",
+    "start": "npm run build && node server.jsx",
     "lint": "./node_modules/.bin/eslint ./src/**/*.js*",
     "test": "./node_modules/.bin/jest",
     "test:watch": "./node_modules/.bin/jest --watchAll"
@@ -37,8 +37,11 @@
     ]
   },
   "jest": {
+    "setupFiles": [
+      "<rootDir>/test/setup.jsx"
+    ],
     "moduleNameMapper": {
-      ".+\\.(png|jpg|jpeg|gif|svg|ico|eot|ttf|woff|woff2)$": "url-loader"
+      ".+\\.(png|jpg|jpeg|gif|svg|ico|eot|ttf|woff|woff2)$": "<rootDir>/test/mocks/fileMock.jsx"
     }
   },
   "dependencies": {
@@ -61,6 +64,8 @@
     "babel-register": "^6.26.0",
     "compression-webpack-plugin": "^1.1.11",
     "css-loader": "^0.28.10",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
     "eslint": "^5.1.0",
     "eslint-plugin-react": "^7.7.0",
     "express": "^4.16.4",
