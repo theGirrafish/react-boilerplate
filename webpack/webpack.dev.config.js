@@ -36,16 +36,25 @@ module.exports = {
         test: /\.(html)$/,
         loader: 'html-loader'
       }, {
-        test: /\.(png|jpg|gif|svg|ico|eot|ttf|woff|woff2)$/,
+        test: /\.(png|jpg|jpeg|gif|svg|ico|eot|ttf|woff|woff2)$/,
         include: /images/,
-        use: {
-          loader: 'url-loader',
-          options: {
-            limit: 100000,
-          }
+        loader: 'url-loader',
+        options: {
+          limit: 51200,
         }
       }
     ]
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        }
+      }
+    }
   },
   plugins: [
     new webpack.ProvidePlugin({

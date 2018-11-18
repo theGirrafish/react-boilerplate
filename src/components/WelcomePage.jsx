@@ -1,5 +1,6 @@
 import React, {PureComponent} from 'react';
 import Logo from '../assets/images/favicon.ico';
+import Background from '../assets/images/background.jpg';
 
 class WelcomePage extends PureComponent {
   constructor(props) {
@@ -9,10 +10,39 @@ class WelcomePage extends PureComponent {
   }
 
   render() {
+    const bgImageCSS = {
+      height: '100%',
+      backgroundImage: `url(${Background})`,
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover'
+    }
+
+    const titleCSS = {
+      left: '0',
+      top: '50%',
+      width: '100%',
+      color: '#000',
+      textAlign: 'center',
+      position: 'absolute'
+    }
+
+    const textCSS = {
+      color: '#fff',
+      padding: '18px',
+      fontSize: '25px',
+      letterSpacing: '10px'
+    }
+
     return (
       <div>
-        <h1>Hello! Welcome to my simple React Boilerplate!</h1>
-        <img src={Logo} alt='code'/>
+        Gang
+        <div style={bgImageCSS}>
+          <div style={titleCSS}>
+            <span style={textCSS}>Congratulations!</span>
+            <span style={textCSS}>Looks like everything is up and running, now it's time to start coding</span>
+          </div>
+        </div>
       </div>
     );
   }
