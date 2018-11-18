@@ -17,7 +17,7 @@
   </a>
 </div>
 
-A simple yet scalable boilerplate for your React projects with integrated CI, linting and ready for deployment. Headache free and focused on quick development.
+A simple yet scalable boilerplate for your React projects with integrated CI, testing, linting and ready for deployment. Headache free and focused on quick development.
 
 Features
 ========
