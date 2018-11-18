@@ -10,23 +10,6 @@ class WelcomePage extends PureComponent {
   }
 
   render() {
-    const bgImageCSS = {
-      height: '100%',
-      backgroundImage: `url(${Background})`,
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'cover'
-    }
-
-    const titleCSS = {
-      left: '0',
-      top: '50%',
-      width: '100%',
-      color: '#000',
-      textAlign: 'center',
-      position: 'absolute'
-    }
-
     const textCSS = {
       color: '#fff',
       padding: '18px',
@@ -35,13 +18,12 @@ class WelcomePage extends PureComponent {
     }
 
     return (
-      <div>
-        Gang
-        <div style={bgImageCSS}>
-          <div style={titleCSS}>
-            <span style={textCSS}>Congratulations!</span>
-            <span style={textCSS}>Looks like everything is up and running, now it's time to start coding</span>
-          </div>
+      <div className='background'>
+        <img className='react_logo' src={Logo}/>
+        <div className='text'>
+          <span className='title'>The React Boilerplate</span>
+          <span className='subtitle'>Congratulations!</span>
+          <span className='subtitle'>Looks like everything is up and running.</span>
         </div>
       </div>
     );

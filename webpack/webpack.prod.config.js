@@ -29,7 +29,6 @@ module.exports = {
         loaders: ['style-loader', 'css-loader', 'less-loader']
       }, {
         test: /\.css$/,
-        include: /node_modules/,
         loaders: ['style-loader', 'css-loader']
       }, {
         test: /\.s[a|c]ss$/,

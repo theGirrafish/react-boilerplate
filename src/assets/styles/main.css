@@ -1,0 +1,38 @@
+.background {
+  height: 100%;
+  background-image: url(../images/background.jpg), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.react_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10%;
+}
+
+.text {
+  top: 50%;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+}
+
+.title {
+  display: block;
+  font-size: 50px;
+  letter-spacing: 4px;
+  padding-bottom: 25px;
+  font-family: 'Merienda One';
+}
+
+.subtitle {
+  display: block;
+  font-size: 25px;
+  letter-spacing: 5px;
+  font-family: 'Merienda One';
+}
