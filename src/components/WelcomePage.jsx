@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import Logo from '../assets/images/favicon.ico';
+import Logo from '../assets/images/react.jpg';
 import Background from '../assets/images/background.jpg';
 
 class WelcomePage extends PureComponent {

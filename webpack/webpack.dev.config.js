@@ -10,7 +10,7 @@ module.exports = {
     path.join(parentDir, 'src/index.jsx')
   ],
   output: {
-    path: path.join(parentDir + 'dist'),
+    path: path.join(parentDir, 'dist'),
     filename: '[name].bundle.js'
   },
   module: {
@@ -40,7 +40,7 @@ module.exports = {
         include: /images/,
         loader: 'url-loader',
         options: {
-          limit: 51200,
+          limit: 51200
         }
       }
     ]

@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 
 const parentDir = path.join(__dirname, '../');
@@ -12,7 +13,7 @@ module.exports = {
   ],
   output: {
     path: path.join(parentDir, 'dist'),
-    filename: '[name].bundle.js',
+    filename: '[name].bundle.js'
   },
   module: {
     rules: [
@@ -41,7 +42,7 @@ module.exports = {
         include: /images/,
         loader: 'url-loader',
         options: {
-          limit: 51200,
+          limit: 51200
         }
       }
     ]
@@ -63,6 +64,11 @@ module.exports = {
     }),
     new webpack.optimize.AggressiveMergingPlugin(),
     new webpack.optimize.OccurrenceOrderPlugin(),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './index.html',
+      favicon: './favicon.ico'
+    }),
     new CompressionPlugin({
       asset: '[path].gz[query]',
       algorithm: 'gzip',
