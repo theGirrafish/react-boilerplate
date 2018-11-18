@@ -1,7 +1,7 @@
 # react-boilerplate
 
 <div align="center">
-  <img src="src/assets/images/favicon.ico" alt="react boilerplate banner"/>
+  <img src="favicon.ico" alt="react boilerplate banner"/>
   <br>
   <!-- Version -->
   <a href="https://github.com/theGirrafish/react-boilerplate/releases">

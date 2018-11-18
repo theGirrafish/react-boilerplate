@@ -34,7 +34,7 @@ exports[`WelcomePage should match the existing snapshot 1`] = `
       className="subtitle"
       onClick={[Function]}
     >
-      3:51:48 AM
+      08:51:48
     </span>
   </div>
 </div>

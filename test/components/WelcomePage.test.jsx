@@ -8,6 +8,8 @@ describe('WelcomePage', () => {
   it('should match the existing snapshot', () => {
     const realDate = Date;
     const mockDate = new Date(1542531108880);
+    mockDate.toLocaleDateString = () => mockDate.toISOString().substring(0, 10);
+    mockDate.toLocaleTimeString = () => mockDate.toISOString().substring(11, 19);
     Date = jest.fn(() => mockDate);
 
     const snapshot = renderer.create(<WelcomePage/>).toJSON();
