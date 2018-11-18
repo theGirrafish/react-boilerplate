@@ -5,7 +5,7 @@
   <br>
   <!-- Version -->
   <a href="https://github.com/theGirrafish/react-boilerplate/releases">
-    <img src="https://img.shields.io/github/v/theGirrafish/react-boilerplate.svg" alt="Github Version"/>
+    <img src="https://img.shields.io/github/release/theGirrafish/react-boilerplate.svg" alt="Github Version"/>
   </a>
   <!-- Build Status -->
   <a href="https://travis-ci.org/theGirrafish/react-boilerplate">
