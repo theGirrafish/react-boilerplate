@@ -8,8 +8,8 @@
     <img src="https://img.shields.io/github/release/theGirrafish/react-boilerplate.svg" alt="Github Version"/>
   </a>
   <!-- Build Status -->
-  <a href="https://travis-ci.org/theGirrafish/react-boilerplate">
-    <img src="https://travis-ci.org/theGirrafish/react-boilerplate.svg?branch=master" alt="Build Status"/>
+  <a href="https://travis-ci.com/theGirrafish/react-boilerplate">
+    <img src="https://travis-ci.com/theGirrafish/react-boilerplate.svg?branch=master" alt="Build Status"/>
   </a>
   <!-- License -->
   <a href="https://github.com/theGirrafish/react-boilerplate/blob/master/LICENSE">
