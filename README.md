@@ -56,7 +56,7 @@ Usage
   - `npm run dev`: Run a development version of the code on `http://localhost:5000` using `webpack-dev-server`. Includes live reloading and source map.
   - `npm run prod`: Run a production ready version of the code on `http://localhost:5000` using `webpack-dev-server`. Includes live reloading.
   - `npm run build`: Build and minify all files in `src/` folder for production use and store in `dist/` folder.
-  - `npm run start`: Build and minify all files into `dist/` folder and serve using `express.js`. Defaults to `http://localhost:5000` if no port is specified.
-  - `npm run lint`: Run linting on all `.js` and `.jsx` files under the `src/` folder.
+  - `npm run start`: Serve files in `dist/` using `express.js`. Defaults to `http://localhost:5000` if no port is specified.
+  - `npm run lint`: Run linting on all `.js` and `.jsx` files under the `src/` and `webpack/` folders.
   - `npm run test`: Run Jest tests againsts the `test/` folder.
   - `npm run test:watch`: Run Jest tests againsts the `test/` folder and watches for code changes.
