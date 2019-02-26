@@ -8,7 +8,7 @@ const buildDir = path.join(rootDir, 'dist');
 
 module.exports = {
   entry: [
-    'babel-polyfill',
+    '@babel/polyfill',
     path.join(rootDir, 'src/index.jsx')
   ],
   output: {
@@ -20,10 +20,7 @@ module.exports = {
       {
         test: /\.(js|jsx)?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          presets: ['env', 'react', 'stage-0']
-        }
+        loader: 'babel-loader'
       }, {
         test: /\.less$/,
         loaders: ['style-loader', 'css-loader', 'less-loader']
